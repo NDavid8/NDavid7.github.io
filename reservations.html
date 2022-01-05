@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pacific Trails Resort :: Reservations</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="pacific.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html">Pacific Trails Resort</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="yurts.html">Yurts</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h2>Reservations at Pacific Trials</h2>
+        <h3>Contact Us Today!</h3>
+        <p>Required fields are marked with an asterisk*</p>
+        <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+            <label for="myFName">*First Name:</label>
+            <input type="required" name="myFName" id="myFName">
+
+            <label for="myLName">*Last Name:</label>
+            <input type="required" name="myLName" id="myLName">
+
+            <label for="myEmail">*E-Mail Address:</label>
+            <input type="required" name="myEmail" id="myEmail">
+
+            <label for="myNumber">Phone Number:</label>
+            <input type="tel" name="myNumber" id="myNumber" maxlength="12">
+
+            <label for="myDate">Arrival Date:</label>
+            <input type="date" name="myDate" id="myDate">
+
+            <label for="myNights">Nights:</label>
+            <input type="number" name="myNights" id="myNights" min="1" max="10">
+
+            <label for="myComments">*Comments:</label>
+            <textarea name="myComments" id="myComments" rows="2"
+            cols="30"></textarea>
+            <input type="submit">
+        </form>
+        <div id="contact">
+            <span class="resort">Pacific Trails Resort</span><br>
+            12010 Pacific Trails Road<br>
+            Zephyr, Ca 95555<br>
+            <br>
+            888-555-5555<br>
+            <br>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; 2020 Pacific Trails Resort<br>
+        <a href="malito:student.natedavid@davistech.edu">
+            student.natedavid@davistech.edu
+        </a>
+    </footer>
+
+    </div>
+</body>
+
+</html>
